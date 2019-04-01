@@ -9,7 +9,7 @@ import androidx.lifecycle.OnLifecycleEvent
 
 class KeyboardEventListener(
         private val activity: AppCompatActivity,
-        private val callback: (isClosed: Boolean) -> Unit
+        private val callback: (isOpen: Boolean) -> Unit
 ) : LifecycleObserver {
 
     private val listener = object : ViewTreeObserver.OnGlobalLayoutListener {
