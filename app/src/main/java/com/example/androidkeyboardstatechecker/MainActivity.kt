@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         KeyboardEventListener(this) {
             Log.v("Keyboard checker", "Keyboard is open = $it")
+            if (it) {
+                makeToast("Keyboard Open")
+            } else {
+                makeToast("Keyboard closed")
+            }
         }
     }
 }
